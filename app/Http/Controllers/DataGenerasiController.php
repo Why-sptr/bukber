@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\DataGenerasi;
+use PDF;
 use Illuminate\Http\Request;
+
 
 class DataGenerasiController extends Controller
 {
@@ -67,6 +69,16 @@ class DataGenerasiController extends Controller
         return response()->json($bukber);
     }
 
+    public function exportpdf()
+    {
+        $bukber = DataGenerasi::orderBy('generasi', 'desc')->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+    
 
 
 

@@ -80,6 +80,9 @@
         <h3>Daftar Bukber Azzahrah</h3>
         <p>Berikut adalah daftar nama-nama peserta bukber Azzahrah</p>
         <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#tambahModal">Tambah Data</button>
+        <a  href="/exportpdf" class="btn btn-outline-secondary">
+          <i class="fas fa-search fa-sm ou">Export</i>
+        </a>
       </div>
       <div class="items text-center" style="margin-top: 20px;">
         <div class="row">

@@ -35,6 +35,7 @@ Route::get('/aboutus', function () {
 Route::get('/datagenerasi', [App\Http\Controllers\DataGenerasiController::class, 'data'])->name('product');
 Route::get('/tambahdata', [App\Http\Controllers\DataGenerasiController::class, 'tambahdata']);
 Route::post('/insertdata', [App\Http\Controllers\DataGenerasiController::class, 'insertdata']);
+Route::get('/exportpdf', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf'])->name('exportpdf');
 
 Route::get('/tampilkandata/{id}', [App\Http\Controllers\DataGenerasiController::class, 'tampil'])->name('admin/tampilkandata');
 Route::post('/updatedata/{id}', [App\Http\Controllers\DataGenerasiController::class, 'updatedata'])->name('admin/updatedata');
