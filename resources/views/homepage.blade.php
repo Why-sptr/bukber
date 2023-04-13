@@ -70,29 +70,29 @@
         <div class="row">
           <div class="col md-4">
             <div class="icons">
-              <img src="{{ asset('images/cam.png') }}" alt="icons">
+              <img src="{{ asset('images/flashback.png') }}" alt="icons">
             </div>
             <div class="desc">
-              <h5>Create Account</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5>Memories</h5>
+              <p>LReminiscing about the atmosphere of azzahrah.</p>
             </div>
           </div>
           <div class="col md-4">
             <div class="icons">
-              <img src="{{ asset('images/cam.png') }}" alt="icons">
+              <img src="{{ asset('images/together.png') }}" alt="icons">
             </div>
             <div class="desc">
-              <h5>Create Account</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5>Together</h5>
+              <p>Strengthen intergenerational togetherness and hospitality.</p>
             </div>
           </div>
           <div class="col md-4">
             <div class="icons">
-              <img src="{{ asset('images/cam.png') }}" alt="icons">
+              <img src="{{ asset('images/sharing.png') }}" alt="icons">
             </div>
             <div class="desc">
-              <h5>Create Account</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5>Sharing</h5>
+              <p>Sharing experiences with each other about what has been achieved.</p>
             </div>
           </div>
         </div>
