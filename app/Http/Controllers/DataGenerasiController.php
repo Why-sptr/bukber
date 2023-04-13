@@ -71,14 +71,16 @@ class DataGenerasiController extends Controller
 
     public function exportpdf()
     {
-        $bukber = DataGenerasi::orderBy('generasi', 'desc')->get();
-    
+        $bukber = DataGenerasi::orderBy('generasi', 'desc')
+            ->orderBy('nama', 'desc')
+            ->get();
+
         view()->share('bukber', $bukber);
         $pdf = PDF::loadview('datagenerasi-pdf');
-    
+
         return $pdf->download('databukber.pdf');
     }
-    
+
 
 
 

@@ -32,7 +32,7 @@
           <a class="nav-link active" href="/datajumlah">Struktur</a>
           <a class="nav-link me-5" href="/datacatatan">Catatan</a>
         </div>
-        <a href="#" class="btn btn-outline-secondary shadow-sm d-sm d-block">Sign Up</a>
+        <a href="#" class="btn btn-outline-secondary shadow-sm d-sm d-block">Log Out</a>
       </div>
     </div>
   </nav>
@@ -92,21 +92,21 @@
             <div class="col-md-3">
               <div>
                 <small>
-                  <a href="/product" class="text-decoration-none">Product</a>
+                  <a href="/datagenerasi" class="text-decoration-none">List</a>
                 </small>
               </div>
             </div>
             <div class="col-md-3">
               <div>
                 <small>
-                  <a href="/owner" class="text-decoration-none">Owners</a>
+                  <a href="/datajumlah" class="text-decoration-none">Jumlah</a>
                 </small>
               </div>
             </div>
             <div class="col-md-3">
               <div>
                 <small>
-                  <a href="/aboutus" class="text-decoration-none">About</a>
+                  <a href="/datacatatan" class="text-decoration-none">Catatan</a>
                 </small>
               </div>
             </div>
