@@ -81,6 +81,149 @@ class DataGenerasiController extends Controller
         return $pdf->download('databukber.pdf');
     }
 
+    public function exportpdf1()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 1')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf2()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 2')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf3()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 3')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf4()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 4')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf5()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 5')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf6()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 6')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf7()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 7')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf8()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 8')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf9()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 9')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf10()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 10')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf11()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 11')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf12()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 12')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
+    public function exportpdf13()
+    {
+        $bukber = DataGenerasi::where('generasi', 'LIKE' , 'Generasi 13')
+                      ->get();
+    
+        view()->share('bukber', $bukber);
+        $pdf = PDF::loadview('datagenerasi-pdf');
+    
+        return $pdf->download('databukber.pdf');
+    }
+
 
 
 
@@ -258,6 +401,16 @@ class DataGenerasiController extends Controller
             $bukber = DataGenerasi::where('nama', 'LIKE', '%' . $request->search . '%')->get();
         } else {
             $bukber = DataGenerasi::where('generasi', 'LIKE', 'Generasi 12')->get();
+        }
+        return view('product', ['bukber' => $bukber]);
+    }
+
+    public function generasi13(Request $request)
+    {
+        if ($request->has('search')) {
+            $bukber = DataGenerasi::where('nama', 'LIKE', '%' . $request->search . '%')->get();
+        } else {
+            $bukber = DataGenerasi::where('generasi', 'LIKE', 'Generasi 13')->get();
         }
         return view('product', ['bukber' => $bukber]);
     }

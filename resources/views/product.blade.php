@@ -66,6 +66,7 @@
             <li><a class="dropdown-item" href="/datagenerasi10">Generasi 10</a></li>
             <li><a class="dropdown-item" href="/datagenerasi11">Generasi 11</a></li>
             <li><a class="dropdown-item" href="/datagenerasi12">Generasi 12</a></li>
+            <li><a class="dropdown-item" href="/datagenerasi13">Generasi 13</a></li>
           </ul>
         </form>
       </div>
@@ -80,9 +81,31 @@
         <h3>Daftar Bukber Azzahrah</h3>
         <p>Berikut adalah daftar nama-nama peserta bukber Azzahrah</p>
         <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#tambahModal">Tambah Data</button>
-        <a  href="/exportpdf" class="btn btn-outline-secondary">
+        <a href="/exportpdf" class="btn btn-outline-secondary">
           <i class="fas fa-search fa-sm ou">Export</i>
         </a>
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Export Gen
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-filter filter-icon" viewBox="0 0 16 16">
+            <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+        <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/exportpdf">Semua Generasi</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf1">Generasi 1</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf2">Generasi 2</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf3">Generasi 3</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf4">Generasi 4</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf5">Generasi 5</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf6">Generasi 6</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf7">Generasi 7</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf8">Generasi 8</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf9">Generasi 9</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf10">Generasi 10</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf11">Generasi 11</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf12">Generasi 12</a></li>
+                  <li><a class="dropdown-item" href="/exportpdf13">Generasi 13</a></li>
+                </ul>
       </div>
       <div class="items text-center" style="margin-top: 20px;">
         <div class="row">
@@ -178,6 +201,7 @@
                 <option value="Generasi 10">Generasi 10</option>
                 <option value="Generasi 11">Generasi 11</option>
                 <option value="Generasi 12">Generasi 12</option>
+                <option value="Generasi 13">Generasi 13</option>
               </select>
               @error('generasi')
               <div class="alert alert-danger">{{ $message }}</div>
@@ -190,6 +214,7 @@
                 <option selected>{{ $ds->metode_pembayaran }}</option>
                 <option value="COD">COD</option>
                 <option value="Transfer">Transfer</option>
+                <option value="Bayar Ditempat">Bayar Ditempat</option>
               </select>
               @error('metode_pembayaran')
               <div class="alert alert-danger">{{ $message }}</div>
@@ -258,6 +283,7 @@
                 <option value="Generasi 10">Generasi 10</option>
                 <option value="Generasi 11">Generasi 11</option>
                 <option value="Generasi 12">Generasi 12</option>
+                <option value="Generasi 13">Generasi 13</option>
               </select>
               @error('generasi')
               <div class="alert alert-danger">{{ $message }}</div>
@@ -269,6 +295,7 @@
                 <option selected>Pilih Metode Pembayaran</option>
                 <option value="COD">COD</option>
                 <option value="Transfer">Transfer</option>
+                <option value="Bayar Ditempat">Bayar Ditempat</option>
               </select>
               @error('metode_pembayaran')
               <div class="alert alert-danger">{{ $message }}</div>
