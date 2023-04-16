@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('foto');
             $table->string('nama');
-            $table->enum('generasi',['Generasi 1','Generasi 2','Generasi 3','Generasi 4','Generasi 5','Generasi 6','Generasi 7','Generasi 8','Generasi 9','Generasi 10','Generasi 11','Generasi 12']);
-            $table->enum('metode_pembayaran',['COD','Transfer']);
+            $table->enum('generasi',['Generasi 1','Generasi 2','Generasi 3','Generasi 4','Generasi 5','Generasi 6','Generasi 7','Generasi 8','Generasi 9','Generasi 10','Generasi 11','Generasi 12','Generasi 13']);
+            $table->enum('metode_pembayaran',['COD','Transfer','Bayar Ditempat']);
             $table->string('penerima');
             $table->timestamps();
             $table->softDeletes();

@@ -36,6 +36,19 @@ Route::get('/datagenerasi', [App\Http\Controllers\DataGenerasiController::class,
 Route::get('/tambahdata', [App\Http\Controllers\DataGenerasiController::class, 'tambahdata']);
 Route::post('/insertdata', [App\Http\Controllers\DataGenerasiController::class, 'insertdata']);
 Route::get('/exportpdf', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf'])->name('exportpdf');
+Route::get('/exportpdf1', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf1'])->name('exportpdf1');
+Route::get('/exportpdf2', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf2'])->name('exportpdf2');
+Route::get('/exportpdf3', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf3'])->name('exportpdf3');
+Route::get('/exportpdf4', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf4'])->name('exportpdf4');
+Route::get('/exportpdf5', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf5'])->name('exportpdf5');
+Route::get('/exportpdf6', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf6'])->name('exportpdf6');
+Route::get('/exportpdf7', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf7'])->name('exportpdf7');
+Route::get('/exportpdf8', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf8'])->name('exportpdf8');
+Route::get('/exportpdf9', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf9'])->name('exportpdf9');
+Route::get('/exportpdf10', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf10'])->name('exportpdf10');
+Route::get('/exportpdf11', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf11'])->name('exportpdf11');
+Route::get('/exportpdf12', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf12'])->name('exportpdf12');
+Route::get('/exportpdf13', [App\Http\Controllers\DataGenerasiController::class, 'exportpdf13'])->name('exportpdf13');
 
 Route::get('/tampilkandata/{id}', [App\Http\Controllers\DataGenerasiController::class, 'tampil'])->name('admin/tampilkandata');
 Route::post('/updatedata/{id}', [App\Http\Controllers\DataGenerasiController::class, 'updatedata'])->name('admin/updatedata');
@@ -60,6 +73,7 @@ Route::get('/datagenerasi9', [App\Http\Controllers\DataGenerasiController::class
 Route::get('/datagenerasi10', [App\Http\Controllers\DataGenerasiController::class, 'generasi10']);
 Route::get('/datagenerasi11', [App\Http\Controllers\DataGenerasiController::class, 'generasi11']);
 Route::get('/datagenerasi12', [App\Http\Controllers\DataGenerasiController::class, 'generasi12']);
+Route::get('/datagenerasi13', [App\Http\Controllers\DataGenerasiController::class, 'generasi13']);
 
 // Catatan
 Route::get('/datacatatan', [App\Http\Controllers\CatatanController::class, 'data'])->name('aboutus');
